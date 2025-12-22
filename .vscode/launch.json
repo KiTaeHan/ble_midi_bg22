@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "bt_soc_empty_silabs_debug",
+            "cwd": "${workspaceFolder}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "serverpath": "C:\\Users\\gauib\\.silabs\\slt\\installs\\archive\\exx32-v6.0.31\\JLinkGDBServerCL.exe",
+            "servertype": "jlink",
+            "gdbPath": "C:\\Users\\gauib\\.silabs\\slt\\installs\\archive\\exx32-v6.0.31\\arm-none-eabi-gdb.exe",
+            "device": "EFR32BG22CxxxF512",
+            "svdFile": "C:\\Users\\gauib\\AppData\\Local\\Temp\\silabs_extension\\silabs_extension\\svd\\EFR32BG22C224F512IM40.svd",
+            "runToEntryPoint": "main",
+            "rtos": "FreeRTOS",
+            "showDevDebugOutput": "raw",
+            "executable": "c:\\Users\\gauib\\SimplicityStudio\\v6_workspace\\bt_soc_empty\\cmake_gcc\\build\\base\\bt_soc_empty.out",
+            "serialNumber": "440168032",
+            "breakAfterReset": true,
+            "overrideLaunchCommands": [
+                "monitor reset",
+                "exec-file c:/Users/gauib/SimplicityStudio/v6_workspace/bt_soc_empty/cmake_gcc/build/base/bt_soc_empty.out",
+                "load",
+                "set $pc = __Vectors[1]",
+                "set $sp = __Vectors[0]"
+            ],
+            "overrideResetCommands": [
+                "monitor reset",
+                "set $pc = __Vectors[1]",
+                "set $sp = __Vectors[0]"
+            ]
+        }
+    ]
+}
