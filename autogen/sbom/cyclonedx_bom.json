@@ -3,7 +3,7 @@
   "specVersion" : "1.6",
   "version" : 1,
   "metadata" : {
-    "timestamp" : "2025-12-22T08:02:59Z",
+    "timestamp" : "2025-12-22T13:01:19Z",
     "authors" : [ {
       "name" : "Silicon Laboratories, Inc."
     } ],
@@ -216,6 +216,30 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:iostream_eusart",
+      "name" : "IO Stream: EUSART",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:iostream_retarget_stdio",
+      "name" : "IO Stream: Retarget STDIO",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "simplicity_sdk:2025.6.2:mpu",
       "name" : "Simple MPU",
       "version" : "2025.6.2",
@@ -242,6 +266,30 @@
       "type" : "library",
       "bom-ref" : "simplicity_sdk:2025.6.2:sl_main",
       "name" : "System Setup (sl_main)",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:uartdrv_usart",
+      "name" : "UARTDRV USART",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:dmadrv_core",
+      "name" : "DMADRV Core",
       "version" : "2025.6.2",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -366,6 +414,18 @@
           }
         } ]
       }
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:emlib_eusart",
+      "name" : "EUSART",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
     }, {
       "scope" : "required",
       "type" : "library",
@@ -532,6 +592,18 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:iostream",
+      "name" : "IO Stream",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "simplicity_sdk:2025.6.2:psa_crypto_aes",
       "name" : "AES Block Cipher",
       "version" : "2025.6.2",
@@ -571,6 +643,18 @@
       },
       "licenses" : [ {
         "expression" : "MSLA"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:hal_prs",
+      "name" : "PRS",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
       } ]
     }, {
       "scope" : "required",
@@ -743,6 +827,18 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:configuration_over_swo",
+      "name" : "Configuration Over SWO",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "simplicity_sdk:2025.6.2:memory_manager",
       "name" : "Memory Manager",
       "version" : "2025.6.2",
@@ -805,6 +901,18 @@
       "type" : "library",
       "bom-ref" : "simplicity_sdk:2025.6.2:memory_manager_pool",
       "name" : "Memory Manager Memory Pool",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:emlib_ldma",
+      "name" : "LDMA",
       "version" : "2025.6.2",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -902,6 +1010,18 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:dmadrv",
+      "name" : "DMADRV",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "simplicity_sdk:2025.6.2:hal_common",
       "name" : "Common Headers",
       "version" : "2025.6.2",
@@ -974,6 +1094,18 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:iostream_uart_common",
+      "name" : "IO Stream: Common code for UART-type streams",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "simplicity_sdk:2025.6.2:psa_crypto",
       "name" : "PSA Crypto",
       "version" : "2025.6.2",
@@ -1019,6 +1151,18 @@
       "type" : "library",
       "bom-ref" : "simplicity_sdk:2025.6.2:psa_driver",
       "name" : "Drivers for Crypto Acceleration",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:uartdrv_core",
+      "name" : "UARTDRV Core",
       "version" : "2025.6.2",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -1549,6 +1693,18 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:debug_swo",
+      "name" : "SWO Debug",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "simplicity_sdk:2025.6.2:rail_util_features",
       "name" : "RAIL Library Features, Core",
       "version" : "2025.6.2",
@@ -1581,6 +1737,18 @@
       },
       "licenses" : [ {
         "expression" : "MSLA"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:sl_string",
+      "name" : "String Functions",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
       } ]
     }, {
       "scope" : "required",
@@ -1832,6 +2000,18 @@
     }, {
       "scope" : "required",
       "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:hal_eusart",
+      "name" : "EUSART",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
       "bom-ref" : "simplicity_sdk:2025.6.2:bluetooth_controller_crypto",
       "name" : "Bluetooth Core Crypto Configuration for Controller",
       "version" : "2025.6.2",
@@ -1840,6 +2020,18 @@
       },
       "licenses" : [ {
         "expression" : "MSLA"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.2:iostream_eusart_core",
+      "name" : "IO Stream: EUSART Core",
+      "version" : "2025.6.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
       } ]
     }, {
       "scope" : "required",
@@ -2170,198 +2362,6 @@
       "type" : "library",
       "bom-ref" : "simplicity_sdk:2025.6.2:gpio",
       "name" : "GPIO Driver",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:iostream_eusart",
-      "name" : "IO Stream: EUSART",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:dmadrv_core",
-      "name" : "DMADRV Core",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:emlib_eusart",
-      "name" : "EUSART",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:iostream",
-      "name" : "IO Stream",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:hal_prs",
-      "name" : "PRS",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:configuration_over_swo",
-      "name" : "Configuration Over SWO",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:emlib_ldma",
-      "name" : "LDMA",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:dmadrv",
-      "name" : "DMADRV",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:iostream_uart_common",
-      "name" : "IO Stream: Common code for UART-type streams",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:debug_swo",
-      "name" : "SWO Debug",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:sl_string",
-      "name" : "String Functions",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:hal_eusart",
-      "name" : "EUSART",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:iostream_eusart_core",
-      "name" : "IO Stream: EUSART Core",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:iostream_retarget_stdio",
-      "name" : "IO Stream: Retarget STDIO",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:uartdrv_usart",
-      "name" : "UARTDRV USART",
-      "version" : "2025.6.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.2:uartdrv_core",
-      "name" : "UARTDRV Core",
       "version" : "2025.6.2",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."

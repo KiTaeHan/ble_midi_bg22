@@ -10,7 +10,7 @@ referenced in this SBOM.)
 -->
 <bom xmlns="http://cyclonedx.org/schema/bom/1.6" version="1">
   <metadata>
-    <timestamp>2025-12-22T08:02:59Z</timestamp>
+    <timestamp>2025-12-22T13:01:19Z</timestamp>
     <authors>
       <author>
         <name>Silicon Laboratories, Inc.</name>
@@ -185,6 +185,26 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:iostream_eusart" type="library">
+          <name>IO Stream: EUSART</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:iostream_retarget_stdio" type="library">
+          <name>IO Stream: Retarget STDIO</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
         <component bom-ref="simplicity_sdk:2025.6.2:mpu" type="library">
           <name>Simple MPU</name>
           <version>2025.6.2</version>
@@ -207,6 +227,26 @@ referenced in this SBOM.)
         </component>
         <component bom-ref="simplicity_sdk:2025.6.2:sl_main" type="library">
           <name>System Setup (sl_main)</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:uartdrv_usart" type="library">
+          <name>UARTDRV USART</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:dmadrv_core" type="library">
+          <name>DMADRV Core</name>
           <version>2025.6.2</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
@@ -321,6 +361,16 @@ referenced in this SBOM.)
               </component>
             </ancestors>
           </pedigree>
+        </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:emlib_eusart" type="library">
+          <name>EUSART</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
         </component>
         <component bom-ref="simplicity_sdk:2025.6.2:bit" type="library">
           <name>Bit Operations Library</name>
@@ -461,6 +511,16 @@ referenced in this SBOM.)
             </ancestors>
           </pedigree>
         </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:iostream" type="library">
+          <name>IO Stream</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
         <component bom-ref="simplicity_sdk:2025.6.2:psa_crypto_aes" type="library">
           <name>AES Block Cipher</name>
           <version>2025.6.2</version>
@@ -498,6 +558,16 @@ referenced in this SBOM.)
 	      </supplier>
           <licenses>
             <expression>MSLA</expression>
+          </licenses>
+        </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:hal_prs" type="library">
+          <name>PRS</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
           </licenses>
         </component>
         <component bom-ref="simplicity_sdk:2025.6.2:se_manager_crypto" type="library">
@@ -640,6 +710,16 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:configuration_over_swo" type="library">
+          <name>Configuration Over SWO</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
         <component bom-ref="simplicity_sdk:2025.6.2:memory_manager" type="library">
           <name>Memory Manager</name>
           <version>2025.6.2</version>
@@ -692,6 +772,16 @@ referenced in this SBOM.)
         </component>
         <component bom-ref="simplicity_sdk:2025.6.2:memory_manager_pool" type="library">
           <name>Memory Manager Memory Pool</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:emlib_ldma" type="library">
+          <name>LDMA</name>
           <version>2025.6.2</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
@@ -774,6 +864,16 @@ referenced in this SBOM.)
             </ancestors>
           </pedigree>
         </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:dmadrv" type="library">
+          <name>DMADRV</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
         <component bom-ref="simplicity_sdk:2025.6.2:hal_common" type="library">
           <name>Common Headers</name>
           <version>2025.6.2</version>
@@ -834,6 +934,16 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:iostream_uart_common" type="library">
+          <name>IO Stream: Common code for UART-type streams</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
         <component bom-ref="simplicity_sdk:2025.6.2:psa_crypto" type="library">
           <name>PSA Crypto</name>
           <version>2025.6.2</version>
@@ -875,6 +985,16 @@ referenced in this SBOM.)
         </component>
         <component bom-ref="simplicity_sdk:2025.6.2:psa_driver" type="library">
           <name>Drivers for Crypto Acceleration</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:uartdrv_core" type="library">
+          <name>UARTDRV Core</name>
           <version>2025.6.2</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
@@ -1329,6 +1449,16 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:debug_swo" type="library">
+          <name>SWO Debug</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
         <component bom-ref="simplicity_sdk:2025.6.2:rail_util_features" type="library">
           <name>RAIL Library Features, Core</name>
           <version>2025.6.2</version>
@@ -1357,6 +1487,16 @@ referenced in this SBOM.)
 	      </supplier>
           <licenses>
             <expression>MSLA</expression>
+          </licenses>
+        </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:sl_string" type="library">
+          <name>String Functions</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
           </licenses>
         </component>
         <component bom-ref="simplicity_sdk:2025.6.2:bluetooth_host_adaptation" type="library">
@@ -1568,6 +1708,16 @@ referenced in this SBOM.)
             </ancestors>
           </pedigree>
         </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:hal_eusart" type="library">
+          <name>EUSART</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
         <component bom-ref="simplicity_sdk:2025.6.2:bluetooth_controller_crypto" type="library">
           <name>Bluetooth Core Crypto Configuration for Controller</name>
           <version>2025.6.2</version>
@@ -1576,6 +1726,16 @@ referenced in this SBOM.)
 	      </supplier>
           <licenses>
             <expression>MSLA</expression>
+          </licenses>
+        </component>
+        <component bom-ref="simplicity_sdk:2025.6.2:iostream_eusart_core" type="library">
+          <name>IO Stream: EUSART Core</name>
+          <version>2025.6.2</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
           </licenses>
         </component>
         <component bom-ref="simplicity_sdk:2025.6.2:emlib_common" type="library">
@@ -1866,166 +2026,6 @@ referenced in this SBOM.)
         </component>
         <component bom-ref="simplicity_sdk:2025.6.2:gpio" type="library">
           <name>GPIO Driver</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:iostream_eusart" type="library">
-          <name>IO Stream: EUSART</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:dmadrv_core" type="library">
-          <name>DMADRV Core</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:emlib_eusart" type="library">
-          <name>EUSART</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:iostream" type="library">
-          <name>IO Stream</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:hal_prs" type="library">
-          <name>PRS</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:configuration_over_swo" type="library">
-          <name>Configuration Over SWO</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:emlib_ldma" type="library">
-          <name>LDMA</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:dmadrv" type="library">
-          <name>DMADRV</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:iostream_uart_common" type="library">
-          <name>IO Stream: Common code for UART-type streams</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:debug_swo" type="library">
-          <name>SWO Debug</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:sl_string" type="library">
-          <name>String Functions</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:hal_eusart" type="library">
-          <name>EUSART</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:iostream_eusart_core" type="library">
-          <name>IO Stream: EUSART Core</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:iostream_retarget_stdio" type="library">
-          <name>IO Stream: Retarget STDIO</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:uartdrv_usart" type="library">
-          <name>UARTDRV USART</name>
-          <version>2025.6.2</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.2:uartdrv_core" type="library">
-          <name>UARTDRV Core</name>
           <version>2025.6.2</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>

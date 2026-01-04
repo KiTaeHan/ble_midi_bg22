@@ -1,35 +1,7 @@
-/***************************************************************************//**
- * @file
- * @brief Core application logic.
- *******************************************************************************
- * # License
- * <b>Copyright 2024 Silicon Laboratories Inc. www.silabs.com</b>
- *******************************************************************************
- *
- * SPDX-License-Identifier: Zlib
- *
- * The licensor of this software is Silicon Laboratories Inc.
- *
- * This software is provided 'as-is', without any express or implied
- * warranty. In no event will the authors be held liable for any damages
- * arising from the use of this software.
- *
- * Permission is granted to anyone to use this software for any purpose,
- * including commercial applications, and to alter it and redistribute it
- * freely, subject to the following restrictions:
- *
- * 1. The origin of this software must not be misrepresented; you must not
- *    claim that you wrote the original software. If you use this software
- *    in a product, an acknowledgment in the product documentation would be
- *    appreciated but is not required.
- * 2. Altered source versions must be plainly marked as such, and must not be
- *    misrepresented as being the original software.
- * 3. This notice may not be removed or altered from any source distribution.
- *
- ******************************************************************************/
 #include "sl_bt_api.h"
 #include "sl_main_init.h"
 #include "app_assert.h"
+#include "gatt_db.h"
 #include "app.h"
 
 #include <stdio.h>
@@ -37,9 +9,8 @@
 #include "sl_sleeptimer.h"
 #include "sl_uartdrv_instances.h"
 
-#define SAM2695_RESET_PIN    7
-#define SAM2695_RESET_PORT   gpioPortA
-
+#define SAM2695_RESET_PIN 7
+#define SAM2695_RESET_PORT gpioPortA
 
 // The advertising set handle allocated from Bluetooth stack.
 static uint8_t advertising_set_handle = 0xff;
@@ -66,7 +37,7 @@ void app_delayms(uint32_t ms)
                                     0);
   app_assert_status(sc);
 
-  while (!timer_timeout) 
+  while (!timer_timeout)
   {
     // Wait for timer to expire
   }
@@ -89,7 +60,9 @@ void SAM2695_sendMIDI(uint8_t cmd, uint8_t data1, uint8_t data2)
   UARTDRV_TransmitB(sl_uartdrv_usart_MIDI_COM_handle, &cmd, 1);
   UARTDRV_TransmitB(sl_uartdrv_usart_MIDI_COM_handle, &data1, 1);
 
-  if (cmd < 0xC0 || cmd >= 0xE0) // Program Change 등 2바이트 메시지 제외 [6, 7]
+  // MIDI Status Byte 확인: 0xC0(Program Change)와 0xD0(Channel Pressure)는 2바이트 메시지입니다.
+  // 그 외(Note On/Off, Control Change, Pitch Bend 등)는 3바이트 메시지입니다.
+  if ((cmd & 0xF0) != 0xC0 && (cmd & 0xF0) != 0xD0)
   {
     UARTDRV_TransmitB(sl_uartdrv_usart_MIDI_COM_handle, &data2, 1);
   }
@@ -113,6 +86,36 @@ void SAM2695_test_midi(void)
   }
 }
 
+// BLE MIDI 패킷 수신 핸들러
+void handle_midi_data(uint8_t *data, uint16_t len)
+{
+  // BLE MIDI 패킷 구조: [Header] [Timestamp] [Status] [Data1] [Data2]
+
+  if (len < 3)
+    return; // 최소 헤더+타임스탬프+데이터1바이트
+
+  // 중요: 하나의 BLE 패킷 안에 여러 개의 MIDI 메시지가 포함될 수 있음 (Running Status 포함)
+  // BLE MIDI 패킷 내의 타임스탬프 바이트(0x80-0xFF)를 필터링하고 순수 MIDI 데이터만 UART로 전송합니다.
+  bool last_byte_was_timestamp = true; // 인덱스 1은 항상 타임스탬프이므로 true로 시작
+
+  // 인덱스 0: Header, 인덱스 1: Timestamp
+  // 인덱스 2부터 실제 MIDI 데이터 시작
+  for (int i = 2; i < len; i++)
+  {
+    uint8_t byte = data[i];
+
+    // 현재 바이트가 0x80 이상이고, 바로 앞 바이트가 타임스탬프가 아니었다면 -> 이것은 스트림 내의 타임스탬프입니다.
+    if ((byte & 0x80) && !last_byte_was_timestamp)
+    {
+      last_byte_was_timestamp = true;
+      continue; // 전송하지 않고 건너뜀
+    }
+
+    UARTDRV_TransmitB(sl_uartdrv_usart_MIDI_COM_handle, &byte, 1);
+    last_byte_was_timestamp = false;
+  }
+}
+
 // Application Init.
 void app_init(void)
 {
@@ -123,9 +126,10 @@ void app_init(void)
 // Application Process Action.
 void app_process_action(void)
 {
-  printf("Looping\r\n");
+  // printf("Looping\r\n");
 
-  if (app_is_process_required()) {
+  if (app_is_process_required())
+  {
     /////////////////////////////////////////////////////////////////////////////
     // Put your additional application code here!                              //
     // This is will run each time app_proceed() is called.                     //
@@ -134,70 +138,90 @@ void app_process_action(void)
   }
 }
 
-/**************************************************************************//**
- * Bluetooth stack event handler.
- * This overrides the default weak implementation.
- *
- * @param[in] evt Event coming from the Bluetooth stack.
- *****************************************************************************/
+/**************************************************************************/ 
+/**
+  * Bluetooth stack event handler.
+  * This overrides the default weak implementation.
+  *
+  * @param[in] evt Event coming from the Bluetooth stack.
+*****************************************************************************/
 void sl_bt_on_event(sl_bt_msg_t *evt)
 {
   sl_status_t sc;
 
-  switch (SL_BT_MSG_ID(evt->header)) {
-    // -------------------------------
-    // This event indicates the device has started and the radio is ready.
-    // Do not call any stack command before receiving this boot event!
-    case sl_bt_evt_system_boot_id:
-      // Create an advertising set.
-      sc = sl_bt_advertiser_create_set(&advertising_set_handle);
-      app_assert_status(sc);
+  // printf("Event ID: %lx\r\n", SL_BT_MSG_ID(evt->header));
 
-      // Generate data for advertising
-      sc = sl_bt_legacy_advertiser_generate_data(advertising_set_handle,
-                                                 sl_bt_advertiser_general_discoverable);
-      app_assert_status(sc);
+  switch (SL_BT_MSG_ID(evt->header))
+  {
+  // -------------------------------
+  // This event indicates the device has started and the radio is ready.
+  // Do not call any stack command before receiving this boot event!
+  case sl_bt_evt_system_boot_id:
+    // Create an advertising set.
+    sc = sl_bt_advertiser_create_set(&advertising_set_handle);
+    app_assert_status(sc);
 
-      // Set advertising interval to 100ms.
-      sc = sl_bt_advertiser_set_timing(
+    // Generate data for advertising
+    sc = sl_bt_legacy_advertiser_generate_data(advertising_set_handle,
+                                               sl_bt_advertiser_general_discoverable);
+    app_assert_status(sc);
+
+    // Set advertising interval to 100ms.
+    sc = sl_bt_advertiser_set_timing(
         advertising_set_handle,
         160, // min. adv. interval (milliseconds * 1.6)
         160, // max. adv. interval (milliseconds * 1.6)
         0,   // adv. duration
         0);  // max. num. adv. events
-      app_assert_status(sc);
-      // Start advertising and enable connections.
-      sc = sl_bt_legacy_advertiser_start(advertising_set_handle,
-                                         sl_bt_legacy_advertiser_connectable);
-      app_assert_status(sc);
-      break;
+    app_assert_status(sc);
+    // Start advertising and enable connections.
+    sc = sl_bt_legacy_advertiser_start(advertising_set_handle,
+                                       sl_bt_legacy_advertiser_connectable);
+    app_assert_status(sc);
+    break;
 
-    // -------------------------------
-    // This event indicates that a new connection was opened.
-    case sl_bt_evt_connection_opened_id:
-      break;
+  // -------------------------------
+  // This event indicates that a new connection was opened.
+  case sl_bt_evt_connection_opened_id:
+  // Connection parameter constrains for BLE MIDI
+  sl_bt_connection_set_parameters(evt->data.evt_connection_opened.connection,
+                                  0xC, 0xC, 0, 0x64, 0, 0xFFFF);
+    break;
 
-    // -------------------------------
-    // This event indicates that a connection was closed.
-    case sl_bt_evt_connection_closed_id:
-      // Generate data for advertising
-      sc = sl_bt_legacy_advertiser_generate_data(advertising_set_handle,
-                                                 sl_bt_advertiser_general_discoverable);
-      app_assert_status(sc);
+  // -------------------------------
+  // This event indicates that a connection was closed.
+  case sl_bt_evt_connection_closed_id:
+    // Generate data for advertising
+    sc = sl_bt_legacy_advertiser_generate_data(advertising_set_handle,
+                                               sl_bt_advertiser_general_discoverable);
+    app_assert_status(sc);
 
-      // Restart advertising after client has disconnected.
-      sc = sl_bt_legacy_advertiser_start(advertising_set_handle,
-                                         sl_bt_legacy_advertiser_connectable);
-      app_assert_status(sc);
-      break;
+    // Restart advertising after client has disconnected.
+    sc = sl_bt_legacy_advertiser_start(advertising_set_handle,
+                                       sl_bt_legacy_advertiser_connectable);
+    app_assert_status(sc);
+    break;
 
-    ///////////////////////////////////////////////////////////////////////////
-    // Add additional event handlers here as your application requires!      //
-    ///////////////////////////////////////////////////////////////////////////
+  // -------------------------------
+  // This event indicates that the value of an attribute in the local GATT
+  // database was changed by a remote GATT client.
+  case sl_bt_evt_gatt_server_attribute_value_id:
+    // Check if the event is for the MIDI Data I/O characteristic.
+    // Note: 'gattdb_midi_data_io' must match the ID in your gatt_db.h
+    if (evt->data.evt_gatt_server_attribute_value.attribute == gattdb_midi_data_io)
+    {
+      handle_midi_data(evt->data.evt_gatt_server_attribute_value.value.data,
+                       evt->data.evt_gatt_server_attribute_value.value.len);
+    }
+    break;
 
-    // -------------------------------
-    // Default event handler.
-    default:
-      break;
+  ///////////////////////////////////////////////////////////////////////////
+  // Add additional event handlers here as your application requires!      //
+  ///////////////////////////////////////////////////////////////////////////
+
+  // -------------------------------
+  // Default event handler.
+  default:
+    break;
   }
 }

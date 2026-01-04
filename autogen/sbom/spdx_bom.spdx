@@ -13,7 +13,7 @@ DocumentNamespace: https://silabs.com
 
 ## Creation Information
 Creator: Organization: Silicon Laboratories, Inc.
-Created: 2025-12-22T08:02:59Z
+Created: 2025-12-22T13:01:19Z
 ## Relationships
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-simplicity_sdk-2025.6.2
 
@@ -41,14 +41,19 @@ Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-20
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-gatt_configuration
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-gatt_service_device_information_override
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-in_place_ota_dfu
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-iostream_eusart
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-iostream_retarget_stdio
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-mpu
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-rail_util_pti
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-sl_main
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-uartdrv_usart
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-dmadrv_core
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-psa_crypto_cipher_ecb
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-psa_crypto_ecdh
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-device_manager
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-power_manager
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-psa_crypto_ecc_secp256r1
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-emlib_eusart
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-bit
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-psa_driver_common
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-bluetooth_controller_libraries
@@ -61,8 +66,10 @@ Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-20
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-nvm3_default_config
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-bluetooth_crypto
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-psa_crypto_config
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-iostream
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-psa_crypto_aes
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-bluetooth_configuration
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-hal_prs
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-se_manager_crypto
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-device_init_dcdc
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-psa_vse_driver
@@ -77,27 +84,32 @@ Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-20
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-bluetooth_gattdb_definition
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-atomic
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-code_classification
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-configuration_over_swo
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-memory_manager
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-status
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-emlib_chip
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-rail_lib_singleprotocol
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-bluetooth_feature_builtin_bonding_database
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-memory_manager_pool
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-emlib_ldma
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-bluetooth_device_compatibility
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-emlib_cmu
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-bluetooth_host_release_libraries
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-emlib_syscfg
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-trustzone_unaware
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-libcryptosoc
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-dmadrv
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-hal_common
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-bgapi_protocol
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-device_peripheral_hal
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-interrupt_manager
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-ecode
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-emlib_rtcc
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-iostream_uart_common
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-psa_crypto
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-emlib_prs
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-psa_driver
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-uartdrv_core
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-clock_manager_runtime
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-psa_crypto_source
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-memory_manager_retention_control_hal
@@ -135,9 +147,11 @@ Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-20
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-sli_crypto
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-sl_rail_util_built_in_phys
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-power_manager_deepsleep_blocking_hfxo_restore
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-debug_swo
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-rail_util_features
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-interrupt_manager_cortexm
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-apploader
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-sl_string
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-bluetooth_host_adaptation
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-mx25_flash_shutdown_usart
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-emlib_usart
@@ -157,7 +171,9 @@ Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-20
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-clock_manager_runtime_hal_s2
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-emlib_burtc
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-psa_its
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-hal_eusart
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-bluetooth_controller_crypto
+Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-iostream_eusart_core
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-emlib_common
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-mbedtls_core
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-sl_core
@@ -178,22 +194,6 @@ Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-20
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-sl_main_init
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-sl_main_process_action
 Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-gpio
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-iostream_eusart
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-dmadrv_core
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-emlib_eusart
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-iostream
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-hal_prs
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-configuration_over_swo
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-emlib_ldma
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-dmadrv
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-iostream_uart_common
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-debug_swo
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-sl_string
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-hal_eusart
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-iostream_eusart_core
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-iostream_retarget_stdio
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-uartdrv_usart
-Relationship: SPDXRef-simplicity_sdk-2025.6.2 CONTAINS SPDXRef-simplicity_sdk-2025.6.2-uartdrv_core
 
 ## Package Information
 PackageName: EFR32BG22C224F512IM40
@@ -372,6 +372,28 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-simplicity_sdk-2025.6.2-in_place_ota_dfu CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
 
 ## Package Information
+PackageName: IO Stream: EUSART
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-iostream_eusart
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-iostream_eusart CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
+PackageName: IO Stream: Retarget STDIO
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-iostream_retarget_stdio
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-iostream_retarget_stdio CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
 PackageName: Simple MPU
 SPDXID: SPDXRef-simplicity_sdk-2025.6.2-mpu
 PackageVersion: 2025.6.2
@@ -403,6 +425,28 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.2-sl_main CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
+PackageName: UARTDRV USART
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-uartdrv_usart
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-uartdrv_usart CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
+PackageName: DMADRV Core
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-dmadrv_core
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-dmadrv_core CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
 
 ## Package Information
 PackageName: ECB Mode
@@ -500,6 +544,17 @@ PackageHomePage: https://github.com/Mbed-TLS/mbedtls.git
 PackageComment: <text>Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols</text>
 ## Relationships
 Relationship: SPDXRef-psa_crypto_ecc_secp256r1-v3.6.2 DESCENDANT_OF SPDXRef-simplicity_sdk-2025.6.2-psa_crypto_ecc_secp256r1
+
+## Package Information
+PackageName: EUSART
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-emlib_eusart
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-emlib_eusart CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
 
 ## Package Information
 PackageName: Bit Operations Library
@@ -648,6 +703,17 @@ PackageComment: <text>Mbed TLS is a C library implementing the PSA Cryptography 
 Relationship: SPDXRef-psa_crypto_config-v3.6.2 DESCENDANT_OF SPDXRef-simplicity_sdk-2025.6.2-psa_crypto_config
 
 ## Package Information
+PackageName: IO Stream
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-iostream
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-iostream CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
 PackageName: AES Block Cipher
 SPDXID: SPDXRef-simplicity_sdk-2025.6.2-psa_crypto_aes
 PackageVersion: 2025.6.2
@@ -682,6 +748,17 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: MSLA
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.2-bluetooth_configuration CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
+PackageName: PRS
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-hal_prs
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-hal_prs CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
 
 ## Package Information
 PackageName: Crypto
@@ -838,6 +915,17 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-simplicity_sdk-2025.6.2-code_classification CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
 
 ## Package Information
+PackageName: Configuration Over SWO
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-configuration_over_swo
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-configuration_over_swo CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
 PackageName: Memory Manager
 SPDXID: SPDXRef-simplicity_sdk-2025.6.2-memory_manager
 PackageVersion: 2025.6.2
@@ -902,6 +990,17 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.2-memory_manager_pool CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
+PackageName: LDMA
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-emlib_ldma
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-emlib_ldma CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
 
 ## Package Information
 PackageName: Device compatibility defines for Bluetooth features
@@ -983,6 +1082,17 @@ PackageComment: <text>Software for cryptography offload to hardware, IP from Sec
 Relationship: SPDXRef-libcryptosoc-v20210503_s29p0p0 DESCENDANT_OF SPDXRef-simplicity_sdk-2025.6.2-libcryptosoc
 
 ## Package Information
+PackageName: DMADRV
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-dmadrv
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-dmadrv CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
 PackageName: Common Headers
 SPDXID: SPDXRef-simplicity_sdk-2025.6.2-hal_common
 PackageVersion: 2025.6.2
@@ -1049,6 +1159,17 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-simplicity_sdk-2025.6.2-emlib_rtcc CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
 
 ## Package Information
+PackageName: IO Stream: Common code for UART-type streams
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-iostream_uart_common
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-iostream_uart_common CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
 PackageName: PSA Crypto
 SPDXID: SPDXRef-simplicity_sdk-2025.6.2-psa_crypto
 PackageVersion: 2025.6.2
@@ -1094,6 +1215,17 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.2-psa_driver CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
+PackageName: UARTDRV Core
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-uartdrv_core
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-uartdrv_core CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
 
 ## Package Information
 PackageName: Clock Manager Runtime
@@ -1559,6 +1691,17 @@ PackageLicenseConcluded: Zlib
 Relationship: SPDXRef-simplicity_sdk-2025.6.2-power_manager_deepsleep_blocking_hfxo_restore CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
 
 ## Package Information
+PackageName: SWO Debug
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-debug_swo
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-debug_swo CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
 PackageName: RAIL Library Features, Core
 SPDXID: SPDXRef-simplicity_sdk-2025.6.2-rail_util_features
 PackageVersion: 2025.6.2
@@ -1590,6 +1733,17 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: MSLA
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.2-apploader CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
+PackageName: String Functions
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-sl_string
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-sl_string CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
 
 ## Package Information
 PackageName: System adaptation layer used by the Bluetooth host stack
@@ -1815,6 +1969,17 @@ PackageComment: <text>Trusted Firmware for M profile Arm CPUs</text>
 Relationship: SPDXRef-psa_its-v1.5 DESCENDANT_OF SPDXRef-simplicity_sdk-2025.6.2-psa_its
 
 ## Package Information
+PackageName: EUSART
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-hal_eusart
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-hal_eusart CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
 PackageName: Bluetooth Core Crypto Configuration for Controller
 SPDXID: SPDXRef-simplicity_sdk-2025.6.2-bluetooth_controller_crypto
 PackageVersion: 2025.6.2
@@ -1824,6 +1989,17 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: MSLA
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.2-bluetooth_controller_crypto CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
+
+## Package Information
+PackageName: IO Stream: EUSART Core
+SPDXID: SPDXRef-simplicity_sdk-2025.6.2-iostream_eusart_core
+PackageVersion: 2025.6.2
+PrimaryPackagePurpose: LIBRARY
+PackageDownloadLocation: NOASSERTION
+PackageSupplier: Organization: Silicon Laboratories, Inc.
+PackageLicenseConcluded: Zlib
+## Relationships
+Relationship: SPDXRef-simplicity_sdk-2025.6.2-iostream_eusart_core CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
 
 ## Package Information
 PackageName: Common Headers
@@ -2115,179 +2291,3 @@ PackageSupplier: Organization: Silicon Laboratories, Inc.
 PackageLicenseConcluded: Zlib
 ## Relationships
 Relationship: SPDXRef-simplicity_sdk-2025.6.2-gpio CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: IO Stream: EUSART
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-iostream_eusart
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-iostream_eusart CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: DMADRV Core
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-dmadrv_core
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-dmadrv_core CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: EUSART
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-emlib_eusart
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-emlib_eusart CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: IO Stream
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-iostream
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-iostream CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: PRS
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-hal_prs
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-hal_prs CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: Configuration Over SWO
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-configuration_over_swo
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-configuration_over_swo CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: LDMA
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-emlib_ldma
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-emlib_ldma CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: DMADRV
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-dmadrv
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-dmadrv CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: IO Stream: Common code for UART-type streams
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-iostream_uart_common
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-iostream_uart_common CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: SWO Debug
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-debug_swo
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-debug_swo CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: String Functions
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-sl_string
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-sl_string CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: EUSART
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-hal_eusart
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-hal_eusart CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: IO Stream: EUSART Core
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-iostream_eusart_core
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-iostream_eusart_core CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: IO Stream: Retarget STDIO
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-iostream_retarget_stdio
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-iostream_retarget_stdio CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: UARTDRV USART
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-uartdrv_usart
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-uartdrv_usart CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2
-
-## Package Information
-PackageName: UARTDRV Core
-SPDXID: SPDXRef-simplicity_sdk-2025.6.2-uartdrv_core
-PackageVersion: 2025.6.2
-PrimaryPackagePurpose: LIBRARY
-PackageDownloadLocation: NOASSERTION
-PackageSupplier: Organization: Silicon Laboratories, Inc.
-PackageLicenseConcluded: Zlib
-## Relationships
-Relationship: SPDXRef-simplicity_sdk-2025.6.2-uartdrv_core CONTAINED_BY SPDXRef-simplicity_sdk-2025.6.2

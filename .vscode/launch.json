@@ -13,12 +13,12 @@
             "runToEntryPoint": "main",
             "rtos": "FreeRTOS",
             "showDevDebugOutput": "raw",
-            "executable": "c:\\Users\\gauib\\SimplicityStudio\\v6_workspace\\bt_soc_empty\\cmake_gcc\\build\\base\\bt_soc_empty.out",
+            "executable": "c:\\Users\\gauib\\SimplicityStudio\\v6_workspace\\ble_midi_bg22\\cmake_gcc\\build\\base\\ble_midi_bg22.out",
             "serialNumber": "440168032",
             "breakAfterReset": true,
             "overrideLaunchCommands": [
                 "monitor reset",
-                "exec-file c:/Users/gauib/SimplicityStudio/v6_workspace/bt_soc_empty/cmake_gcc/build/base/bt_soc_empty.out",
+                "exec-file c:/Users/gauib/SimplicityStudio/v6_workspace/ble_midi_bg22/cmake_gcc/build/base/ble_midi_bg22.out",
                 "load",
                 "set $pc = __Vectors[1]",
                 "set $sp = __Vectors[0]"

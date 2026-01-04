@@ -1,4 +1,0 @@
-C:/Users/gauib/SimplicityStudio/v6_workspace/bt_soc_empty/cmake_gcc/build/CMakeFiles/slc.dir
-C:/Users/gauib/SimplicityStudio/v6_workspace/bt_soc_empty/cmake_gcc/build/CMakeFiles/bt_soc_empty.dir
-C:/Users/gauib/SimplicityStudio/v6_workspace/bt_soc_empty/cmake_gcc/build/CMakeFiles/edit_cache.dir
-C:/Users/gauib/SimplicityStudio/v6_workspace/bt_soc_empty/cmake_gcc/build/CMakeFiles/rebuild_cache.dir

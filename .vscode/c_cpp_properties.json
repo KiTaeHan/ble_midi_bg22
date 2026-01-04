@@ -4,9 +4,9 @@
         {
             "name": "default_config",
             "includePath": [
+                "${workspaceFolder}/autogen",
                 "${workspaceFolder}/config",
                 "${workspaceFolder}/config/btconf",
-                "${workspaceFolder}/autogen",
                 "${workspaceFolder}/.",
                 "C:/Users/gauib/.silabs/slt/installs/conan/p/simpleb526998f4a4d/p/platform/Device/SiliconLabs/EFR32BG22/Include",
                 "C:/Users/gauib/.silabs/slt/installs/conan/p/simpleb526998f4a4d/p/app/common/util/app_assert",
